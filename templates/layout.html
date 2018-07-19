@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="/staic/bootstrap.min.j"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bungee Shade' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bilbo Swash Caps' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=IM Fell DW Pica SC' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Jockey One' rel='stylesheet'>
+    <style>
+	<link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet'>
+    <style>
+
+  .nav .nav-item .hov:hover{
+
+        background-color: grey;
+        color: black;
+        border-radius: 10%;
+        opacity: .4
+        }
+
+   nav ul li a:hover{
+
+    background-color: blue;
+    border-radius: 0%;
+    color: black;
+    font-weight: 50px;
+    opacity: .6
+   }
+
+   nav ul li a{
+    font-family: sarif;
+	font-size: 20px;
+   }
+    </style>
+</head>
+<body>
+
+
+<!-- raw Nav -->
+<div>
+    <ul class="nav justify-content-end">
+    <li class="nav-item">
+      <a class="nav-link disabled hov" href="/about"> <i class="fa fa-angle-double-right"></i> About Us</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled hov" href="#"> <i class="fa fa-angle-double-right"></i> Contact Us</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link disabled" href="#"><i class="fa fa-phone"></i><span style="margin-left: 10px;">(+233)27-279-0174</span></a>
+    </li>
+  </ul>
+</div>
+
+
+<!-- main Navbar with Logo  -->
+<nav class="navbar navbar-expand-md bg-light" style="height: 100px;">
+  <a class="navbar-brand" href="#"><img src="static/img/loblue.png" alt="Logo" style="width:200px;"></a>
+</nav>
+
+<!-- main Navbar with Links  -->
+<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+<a class="navbar-brand" href="#"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/about">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/services">Our Services</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="/register">Request Class</a>
+        </li>
+    </ul>
+  </div>
+</nav>
+{% block body %}
+
+
+
+
+
+
+{% endblock %}
+</body>
+</html>

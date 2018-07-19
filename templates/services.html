@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+{% block title %}Services{% endblock %}
+
+{% block body %}
+<style>
+  .row .col-sm-4 img:hover{
+  opacity: .6
+  }
+</style>
+
+<!-- route indicator -->
+ <ul class="nav bg-dark">
+    <li class="nav-item">
+      <a class="nav-link disabled" href="/" style="color: white;"><i class="fa fa-home" style="font-size:24px"></i></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="/services" style="color: green;">/ Services</a>
+    </li>
+  </ul>
+
+<div class="container-fluid text-center">
+    <hr>
+  <h2 style="font-family: serif; margin-bottom: 60px;">OUR SERVICES</h2>
+  <hr>
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="static/img/harware.jpg" alt="hardware" style="width: 100%; height: 300px;">
+      <h6><i class="fa fa-cogs" style="font-size:24px"></i><b style="margin-left: 10px;">Desktop and Laptop repairs</b></li></h6>
+    </div>
+
+    <div class="col-sm-4">
+      <img src="static/img/os.jpg" alt="hardware" style="width: 100%; height: 300px;">
+      <h6><i class="fa fa-spinner fa-spin" style="font-size:24px"></i><b style="margin-left: 10px;">Operating system Installation with Packaged Softwares</b></h6>
+    </div>
+
+    <div class="col-sm-4">
+      <img src="static/img/network.png" alt="hardware" style="width: 100%; height: 300px;">
+      <h6><i class="fa fa-sitemap" style="font-size:24px"></i><b style="margin-left: 10px;">Computer Network Installation For small scale business</b></h6>
+    </div>
+
+  </div>
+    <br><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="static/img/ckl.jpg" alt="hardware" style="width: 100%; height: 300px;">
+      <h6><i class="fa fa-group" style="font-size:24px"></i><b style="margin-left: 10px;">I.T Training For Beginners</b></h6>
+    </div>
+
+    <div class="col-sm-4">
+      <img src="static/img/pos.jpg" alt="hardware" style="width: 100%; height: 300px;">
+        <h6><b>Point Of Sales Installations(POS)</b></h6>
+    </div>
+
+    <div class="col-sm-4">
+      <img src="static/img/websi.jpg" alt="hardware" style="width: 100%; height: 300px;">
+        <h6><b>Website Development</b></h6>
+    </div>
+  </div>
+</div>
+{% include "includes/footer.html" %}
+{% endblock%}

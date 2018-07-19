@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+{% from "render_field.html" import render_field %}
+
+{% block title %}Register{% endblock %}
+
+{% block body %}
+
+<!-- route indicator -->
+ <ul class="nav bg-dark">
+    <li class="nav-item">
+      <a class="nav-link disabled" href="/" style="color: white;"><i class="fa fa-home" style="font-size:24px"></i></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="/register" style="color: green;">/ Register</a>
+    </li>
+  </ul>
+
+<div class="row container">
+   <div class="col-sm-8">
+       <hr>
+       <img src="static/img/study.jpg" width="100%" >
+       <hr><br>
+       <div>
+           <div class="bg-warning">
+                <h3 style="font-family: 'Bungee Shade'; font-size: 30px;">STUDY I.T With Us</h3>
+                <p style="font-family: 'Bungee Shade'; font-size: 25px;" class="text-dark">ACH-PHIX I.T Training</p>
+           </div>
+           <hr><br>
+           <p style="font-family: serif; font-size: 20px;">We train students who are interested in Learning the Basics of I.T  Programs and students who wants to Upgrade their skills in the I.T Field.</p>
+           <p style="font-family: monospace; font-size: 20px;">We Teach the following Programs :</p>
+           <ul style="font-family: 'IM Fell DW Pica SC'; font-size: 25px;" class="text-info">
+               <li>COMPUTER HARDWARE</li>
+               <li>COMPUTER NETWORKING</li>
+               <li>COMPUTER PROGRAMMING LANGUAGES</li>
+           </ul>
+           <p style="font-family:'Jockey One'; font-size: 22px;">Our class duration is 2 hours. Send us your Request by filling the form and submit.</p>
+       </div>
+   </div>
+
+    <div class="col-sm-4" style="background-image:url('static/img/cov.jpg'); background-size: cover;">
+        <hr>
+        <h2 style="margin-bottom: 60px; font-family: serif;" class="text-center">Send Request</h2>
+        <hr>
+                    {% for message in get_flashed_messages() %}
+                         <div class="alert alert-warning">
+                         <button type="button" class="close" data-dismiss="alert">&times;</button>
+                            {{ message }}
+                         </div>
+                    {% endfor %}
+
+            <form method="POST" action="/register">
+                {{ form.hidden_tag() }}
+                {{ render_field(form.firstname, placeholder=form.firstname.label.text) }}
+                {{ render_field(form.lastname, placeholder=form.lastname.label.text) }}
+                {{ render_field(form.gender, placeholder=form.gender.label.text) }}
+                {{ render_field(form.email, placeholder=form.email.label.text) }}
+                {{ render_field(form.phone) }}
+                {{ render_field(form.course) }}
+                {{ render_field(form.status) }}
+                <div class="btn">
+                  <input class="btn btn-primary" type="submit"  value="Submit Form">
+                </div>
+            </form>
+
+   </div>
+</div>
+
+{% include "includes/footer.html" %}
+{% endblock%}
+
+
+

@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block title %}About{% endblock %}
+
+{% block body %}
+<!-- route indicator -->
+ <ul class="nav bg-dark" style="color: white;" >
+    <li class="nav-item">
+      <a class="nav-link disabled" href="/" style="color: white;"><i class="fa fa-home" style="font-size:24px"></i></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="/about" style="color: green;">/ About Us</a>
+    </li>
+  </ul>
+
+<div class="container">
+    <h2 style="margin-top: 20px; font-family: 'Arvo';font-size: 30px;"><b>About Us</b></h2>
+    <hr>
+    <h4 style="margin-bottom: 30px;">ACH-PHIX I.T Solutions</h4>
+    <p style="font-size: 20px; font-family: serif; margin-bottom: 30px;">
+        ACH-PHIX is an I.T Company that Provides solutions to any Problem concerning Computer hardware, Operating Systems (Windows, MacOS etc..) and
+        Computer Networking. We also organise detailed computer training for students who are ready and willing to Learn advance skills in I.C.T. We Provide Proffesional
+        services to all our customers.
+    </p>
+
+    <h4 style="margin-bottom: 30px;">Our Bussiness Plans</h4>
+    <p style="font-size: 20px; font-family: serif; margin-bottom: 50px;">
+
+       We accept bussiness from Firms and individuals.
+       Professionalism is our key principle and we opt the best for our clients.
+        We provide service to clients from <span style="font-size: 20px; font-family: Monospace;" class="text-info">Monday to Saturday.</span>
+    </p>
+
+
+    <h4 style="margin-bottom: 30px;">ACHEAMPONG PHILEMON <em style="font-size: 20px; font-family: serif;">( Project Manager )</em></h4>
+    <p style="font-size: 20px; font-family: serif; margin-bottom: 50px;">
+        Philemon Acheampong is an energetic, ambitious person who has developed a mature and responsible approach to any task that he undertakes, or situation that he is presented with.
+        As a graduate from IPMC with experience in computer hardware and networking, he is good in troubleshooting hardware and networking problems and solving them within short periods of time.
+        Nevertheless he is also an expert in solving any Microsoft windows operation system Issues as well possessing detailed knowledge in Linux.
+        On the other hand he has repaired countless types and brand of desktop computers and laptops.
+        He worked with University of Ghana ICT Department as a Computer System Engineer, moreover he planned and installed a workgroup LAN (Local area network) for the PFAGO Chemist in the University of Ghana.
+        Also , he has developed skills in computer Programming languages such as Python, HTML and CSS, Javascript etc ...
+    </p>
+
+    <h5 style="font-family:Monospace; font-size: 30px;"><em class="text-primary">Get in Touch...</em></h5>
+</div>
+
+
+{% include "includes/footer.html" %}
+{% endblock%}
